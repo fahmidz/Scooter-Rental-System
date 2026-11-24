@@ -1,5 +1,3 @@
--- Run AFTER importing the user's original scooter_rental PostgreSQL dump.
--- Keeps existing tables intact; only adds backend support tables and indexes.
 CREATE TABLE IF NOT EXISTS auth_tokens (
   token_hash CHAR(64) PRIMARY KEY,
   user_id INTEGER NOT NULL REFERENCES users(user_id) ON DELETE CASCADE,
