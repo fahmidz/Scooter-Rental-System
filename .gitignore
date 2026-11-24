@@ -1,0 +1,19 @@
+# Build output
+target/
+*.class
+
+# IDE files
+.idea/
+.vscode/
+*.iml
+
+# Secrets and environment variables
+.env
+.env.*
+!.env.example
+
+# MQTT persistence
+scooter-backend-service-*/
+
+# Logs
+*.log
